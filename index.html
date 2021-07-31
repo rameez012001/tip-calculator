@@ -10,6 +10,43 @@
     <script src="app.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+
+        <!-- heading -->
+        <header role="heading">
+            <h1><pre>SPLI
+TTER
+            </pre></h1>
+        </header>
+
+        <!-- main -->
+        <main role="combobox">
+            <div class="BllSd">
+                <p>Bill</p>
+                <input class="Inpts" type="text" name="Total_Bill_Amount" id="TBllamnt" placeholder="0">
+                <p>Select Tip %</p>
+                <button class="btns" onclick="Percent(5)">5%</button>
+                <button class="btns" onclick="Percent(10)">10%</button>
+                <button class="btns" onclick="Percent(15)">15%</button>
+                <button class="btns" onclick="Percent(25)">25%</button>
+                <button class="btns" onclick="Percent(50)">50%</button>
+                <button class="btns" onclick="Percent(1)">Custom</button>
+                
+                <p>Number of People</p>
+                <input class="Inpts" type="text" name="People" id="PeNr" placeholder="0">
+            </div>
+
+
+            <div class="RsltSd">
+                <p>Tip Amount</p>
+                <input class="Inpts" type="text" name="Tip_Amount" id="TpAt" placeholder="0.00">
+                <p>Total</p>
+                <input class="Inpts" type="text" name="Bill_Amount" id="BlAt" placeholder="0.00">
+                <button class="btns" onclick="Reset()">RESET</button>
+            </div>
+        </main>
+
+
+    </div>
 </body>
 </html>

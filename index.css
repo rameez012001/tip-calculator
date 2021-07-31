@@ -3,4 +3,5 @@
 html,body{
     font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
+    font-size: 62.5%;
 }

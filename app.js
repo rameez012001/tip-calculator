@@ -6,6 +6,12 @@ function Percent(x){
     let amt2 = parseInt(bll.value)+parseInt(amt);
     document.getElementById('TpAt').value=amt1;
     document.getElementById('BlAt').value=amt2;
+    if(Prsn.value==""||Prsn.value==null){
+        Prsn.style.border="1px solid red";
+        document.getElementById('TpAt').value="";
+        document.getElementById('BlAt').value="";
+        document.getElementById('ErrMsg').style.display='block';
+    }
 }
 function Reset(){
     const Inputs = document.querySelectorAll(".Inpts");

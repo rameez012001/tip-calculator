@@ -1,7 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 html,body{
-    font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
     font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    font-family: 'Space Mono', monospace;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+display: block;
+margin: auto;
+}
+header{
+    text-align: center;
+
+}
+main{
+display: flex;
+justify-content: center;
+background-color: hsl(189, 41%, 97%);
+}
+.BllSd{
+}
+#TBllamnt{
+    background: white url('./images/icon-dollar.svg')no-repeat .4em .2em;
+    background-size:.8rem ;
+}
+input{
+    text-align: end;
+    border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.BllSd button{
+    
+}
+#Cstm{
+    width: 7ch;
+}
+#Cstm::placeholder{
+    text-align: center;
+}
+#PeNr{
+    background: white url('./images/icon-person.svg')no-repeat .4em .3em ;
+    background-size: .8rem;
+}
+
+
+.RsltSd{
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 4px;
+    margin: 1em;
+}
+.RsltSd p{
+    color: hsl(0, 0%, 100%);
+    font-weight: 550;
+}
+.RsltSd input,.RsltSd input::placeholder{
+    background: transparent;
+    color: hsl(172, 67%, 45%);
 }

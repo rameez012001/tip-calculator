@@ -13,24 +13,29 @@ html,body{
     padding: 0;
 }
 .container{
-display: block;
-margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 header{
-    text-align: center;
+    align-self: center;
 }
 main{
 display: flex;
 justify-content: space-around;
 background-color: hsl(189, 41%, 97%);
 padding: 3em;
-margin: 0 20%;
 border-radius: 10px;
+align-self: center;
 }
 .BllSd{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.BllSd label{
+    font-size: .9rem;
 }
 #TBllamnt{
     background: hsl(180, 81%, 96%) url('./images/icon-dollar.svg')no-repeat .4em .2em;

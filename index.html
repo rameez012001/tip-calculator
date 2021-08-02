@@ -20,25 +20,28 @@
         <!-- main -->
         <main role="combobox">
             <div class="BllSd">
-                <p>Bill</p>
+                <label for="Total_Bill_Amount" style="display: block;">Bill</label>
                 <input class="Inpts" type="number" name="Total_Bill_Amount" id="TBllamnt" placeholder="0">
                 <p>Select Tip %</p>
-                <button class="btns" onclick="Percent(5)">5%</button>
-                <button class="btns" onclick="Percent(10)">10%</button>
-                <button class="btns" onclick="Percent(15)">15%</button>
-                <button class="btns" onclick="Percent(25)">25%</button>
-                <button class="btns" onclick="Percent(50)">50%</button>
+
+                <div class="gridBtns">
+                <button class="btns btns1" onclick="Percent(5)">5%</button>
+                <button class="btns btns1" onclick="Percent(10)">10%</button>
+                <button class="btns btns1" onclick="Percent(15)">15%</button>
+                <button class="btns btns1" onclick="Percent(25)">25%</button>
+                <button class="btns btns1" onclick="Percent(50)">50%</button>
                 <input class="Inpts" type="number" name="Custom" oninput="Percent(value)" id="Cstm" placeholder="Custom">
+                </div>
                 
-                <p>Number of People</p><span style="color: red;display: none;" id="ErrMsg">Can't be zero1</span>
+                <label for="People" style="display: block;">Number of People</label><span style="color: red;display: none;" id="ErrMsg">Can't be zero1</span>
                 <input class="Inpts" type="number" name="People" oninput="Person()" id="PeNr" placeholder="0">
             </div>
 
 
             <div class="RsltSd">
-                <p>Tip Amount</p>
+                <label for="Tip_Amount">Tip Amount</label>
                 <input class="Inpts" type="number" name="Tip_Amount" id="TpAt" placeholder="$0.00" disabled>
-                <p>Total</p>
+                <label for="Bill_Amount">Total</label>
                 <input class="Inpts" type="number" name="Bill_Amount" id="BlAt" placeholder="$0.00" disabled><br>
                 <button class="btns" id="Rst" onclick="Reset()">RESET</button>
             </div>

@@ -7,6 +7,7 @@
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index1.css" media="only screen and (max-width:37.5em)">
     <script src="app.js"></script>
 </head>
 <body>
@@ -20,9 +21,9 @@
         <!-- main -->
         <main role="combobox">
             <div class="BllSd">
-                <label for="Total_Bill_Amount" style="display: block;">Bill</label>
+                <label for="Total_Bill_Amount">Bill</label>
                 <input class="Inpts" type="number" name="Total_Bill_Amount" id="TBllamnt" placeholder="0">
-                <p>Select Tip %</p>
+                <label>Select Tip %</label>
 
                 <div class="gridBtns">
                 <button class="btns btns1" onclick="Percent(5)">5%</button>
@@ -32,19 +33,30 @@
                 <button class="btns btns1" onclick="Percent(50)">50%</button>
                 <input class="Inpts" type="number" name="Custom" oninput="Percent(value)" id="Cstm" placeholder="Custom">
                 </div>
-                
-                <label for="People" style="display: block;">Number of People</label><span style="color: red;display: none;" id="ErrMsg">Can't be zero1</span>
+
+                <div class="Dmmy">
+                <label for="People" style="display: block;">Number of People</label><p id="ErrMsg">Can't be Zero</p></div>
                 <input class="Inpts" type="number" name="People" oninput="Person()" id="PeNr" placeholder="0">
             </div>
 
 
             <div class="RsltSd">
-                <label for="Tip_Amount" id="Rlbl1">Tip Amount
+                <!-- <label for="Tip_Amount" id="Rlbl1">Tip Amount
                 <input class="Inpts" type="number" name="Tip_Amount" id="TpAt" placeholder="$0.00" disabled>
-                </label>
-                <label for="Bill_Amount" id="Rlbl2">Total
+                </label> -->
+                <div id="Rltdiv1">
+                    <h4><pre><b>Tip Amount</b><span style="color:hsl(184, 14%, 56%) ;">
+/ person</span></pre></h4>
+                    <p class="Amnts1" id="TpAt">$0.00</p>
+                </div>
+                <!-- <label for="Bill_Amount" id="Rlbl2">Total
                 <input class="Inpts" type="number" name="Bill_Amount" id="BlAt" placeholder="$0.00" disabled><br>
-                </label>
+                </label> -->
+                <div id="Rltdiv2">
+                    <h4><pre><b>Total</b><span style="color: hsl(184, 14%, 56%);">
+/ person</span></pre></h4>
+                    <p class="Amnts1" id="BlAt">$0.00</p>
+                </div>
                 <button class="btns" id="Rst" onclick="Reset()">RESET</button>
             </div>
         </main>

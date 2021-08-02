@@ -1,0 +1,57 @@
+html,body{
+    background-color: hsl(185, 41%, 84%);
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
+}
+*{
+    font-family: 'Space Mono', monospace;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 15px;
+    width: 100%;
+    min-width: 80ch;
+    align-items: center;
+}
+#TBllamnt{
+    width: 20ch;
+    align-self: center;
+}
+.gridBtns{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+#Cstm{
+    width:8ch;
+    padding:0 1em;
+}
+#Cstm::placeholder{
+    font-weight: 550;
+    text-align: center;
+}
+.btns1{
+    width: 8ch;
+}
+#PeNr{
+    width: 20ch;
+}
+
+.RsltSd{
+    background-color:hsl(183, 100%, 15%);
+    border-radius: 10px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 55ch;
+    height:35vh;
+    padding: 2em;
+}

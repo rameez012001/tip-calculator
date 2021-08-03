@@ -30,7 +30,7 @@ border-radius: 10px;
 align-self: center;
 width: 100%;
 max-width: 50%;
-min-width: 120ch;
+min-width: 110ch;
 }
 .BllSd{
     display: flex;
@@ -101,6 +101,7 @@ input[type=number] {
     display: none; 
     float: right;
     font-weight: 550;
+
 }
 #PeNr{
     background: hsl(180, 81%, 96%) url('./images/icon-person.svg')no-repeat .4em .3em ;

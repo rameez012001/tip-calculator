@@ -52,6 +52,6 @@ main{
     flex-direction: column;
     justify-content: space-around;
     width: 55ch;
-    height:35vh;
+    height:25vh;
     padding: 2em;
 }
